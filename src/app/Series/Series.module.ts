@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SeriesComponent } from './Series.component';
+import { SeriesComponent } from './Series.component'; 
 
 @NgModule({
   imports: [
