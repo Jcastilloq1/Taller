@@ -3,15 +3,15 @@ import { HttpClient} from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { Series } from './series';
 
-import { enviroment } from '../../enviroments/enviroment';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SeriesService {
-  private apiUtl = enviroment.baseUrl + 'series.json'
+  private apiUtl = environment.baseUrl + 'series.json';
 
-constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getSeries(): Observable<Series[]> {
     return this.http.get<Series[]>(this.apiUtl)
