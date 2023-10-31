@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class SeriesService {
-  private apiUtl = environment.baseUrl + 'series.json';
+  private apiUtl = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
 

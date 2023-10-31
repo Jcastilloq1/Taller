@@ -4,7 +4,7 @@ import { dataSeries } from './dataSeries';
 import { SeriesService } from './series.service'; 
 
 @Component({
-  selector: 'app-Series',
+  selector: 'app-series',
   templateUrl: './Series.component.html',
   styleUrls: ['./Series.component.css']
 })
